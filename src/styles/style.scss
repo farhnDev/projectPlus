@@ -1,0 +1,142 @@
+@import "main.css";
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .restaurant-detail {
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .restaurant-header {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+  }
+  
+  .restaurant__title {
+    margin-bottom: 10px;
+    font-size: 1.5em;
+  }
+  
+  .restaurant__poster {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .restaurant__info {
+    padding: 20px;
+  }
+  
+  .info-item {
+    margin-bottom: 15px;
+  }
+  
+  .info-item h4 {
+    color: #333;
+  }
+  
+  .info-item p {
+    color: #666;
+  }
+  
+  .restaurant__menu {
+    padding: 20px;
+    background-color: #f5f5f5;
+  }
+  
+  .restaurant__menu h3 {
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .restaurant__menu ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .restaurant__menu li {
+    margin-bottom: 10px;
+    color: #666;
+  }
+  
+  .customer-reviews {
+    padding: 20px;
+  }
+  
+  .review-item {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    list-style-type: none;
+  }
+  
+  .reviewer-name {
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .review-content,
+  .review-date {
+    color: #666;
+  }
+  /* Like button styles */
+  .like {
+    background-color: #ff5252;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2em;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  #movie-item__header__poster {
+    height: 250px;
+  }
+  /* Responsive styles */
+  @media screen and (max-width: 600px) {
+    .restaurant__poster,
+    #movie-item__header__poster {
+      max-width: 100%;
+      max-height: none;
+    }
+  }
+
+  .restaurant__info {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 20px;
+    padding: 20px;
+  }
+
+  .restaurant__menu {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 20px;
+    padding: 20px;
+  }
+  
+.movie-item__header__rating  {
+  font-size: 16px;
+  bottom: 12%;
+}
+
+a, button, input, textarea {
+  display: inline-block;
+  min-width: 44px;
+  min-height: 44px;
+}
